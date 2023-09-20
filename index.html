@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compotible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/main12.css">
+        <title>laba № 2 module 3</title>
+       
+    </head>
+    <body>
+        <div id="spisok">
+                <li v-for="note in notes"><span>{{note}}</span></li>
+
+            <input id="input" :value="inputValue" @input="inputChangeValue" type="text"><br><br>
+
+            <button @click="start" class="button">Начало списка</button>
+            <button @click="middle" class="button">Середина</button>
+            <button @click="end" class="button">Конец списка</button>
+
+        </div><br>
+        
+        <div id="block">
+        <button @click="blo" class="blo" :class="[color]"><p>{{title}}</p></button>
+        </div>
+       
+
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="js/script10.js"></script>
+        <script src="js/script11.js"></script>
+    </body>
+</html>
